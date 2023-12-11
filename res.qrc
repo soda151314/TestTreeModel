@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/png/file_close.png</file>
+        <file>res/png/file_open.png</file>
+    </qresource>
+</RCC>
