@@ -12,6 +12,13 @@ MainWindow::MainWindow(QWidget *parent)
 
 MainWindow::~MainWindow()
 {
+    for(auto itr = m_lstNodes.begin(); itr != m_lstNodes.end(); ++itr)
+    {
+        delete*itr;
+        (*itr) = nullptr;
+    }
+
+    m_lstNodes.clear();
     delete ui;
 }
 
